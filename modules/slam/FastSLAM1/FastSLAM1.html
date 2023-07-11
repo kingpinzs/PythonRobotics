@@ -8,7 +8,10 @@
       <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/plot_directive.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/copybutton.css" type="text/css" />
       <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/dark_mode_css/general.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/dark_mode_css/dark.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
@@ -17,7 +20,11 @@
         <script src="../../../_static/jquery.js"></script>
         <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/doctools.js"></script>
+        <script src="../../../_static/clipboard.min.js"></script>
+        <script src="../../../_static/copybutton.js"></script>
         <script async="async" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="../../../_static/dark_mode_js/default_dark.js"></script>
+        <script src="../../../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../../../genindex.html" />
     <link rel="search" title="Search" href="../../../search.html" />
@@ -168,7 +175,7 @@ and the unlikely ones with the lowest weights die out.</p></li>
 <h2>1- Predict<a class="headerlink" href="#predict" title="Permalink to this headline"></a></h2>
 <p>The following equations and code snippets we can see how the particles
 distribution evolves in case we provide only the control <span class="math notranslate nohighlight">\((v,w)\)</span>,
-which are the linear and angular velocity repsectively.</p>
+which are the linear and angular velocity respectively.</p>
 <p><span class="math notranslate nohighlight">\(\begin{equation*} F= \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 \end{bmatrix} \end{equation*}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\begin{equation*} B= \begin{bmatrix} \Delta t cos(\theta) &amp; 0\\ \Delta t sin(\theta) &amp; 0\\ 0 &amp; \Delta t \end{bmatrix} \end{equation*}\)</span></p>
 <p><span class="math notranslate nohighlight">\(\begin{equation*} X = FX + BU \end{equation*}\)</span></p>
